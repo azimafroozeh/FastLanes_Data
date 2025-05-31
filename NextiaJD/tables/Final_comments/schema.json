@@ -18,10 +18,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "Navigation is a mess, the HUGE majority of training for listeners is optional and the app has limited functionality compared to browser version. The chat request function also seems buggy which is frustrating. Having said all that, there are honestly plenty of really amazing listeners available, if you persevere (all stars are for them!). There are brief self-help guides available on various topics - they can be hit and miss, and should be taken with a grain of salt, or simply as introductions.",
-      "type": "VARCHAR"
-    },
-    {
       "name": "4",
       "type": "BIGINT"
     },

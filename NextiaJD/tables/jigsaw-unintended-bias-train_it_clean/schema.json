@@ -6,10 +6,6 @@
       "type": "BIGINT"
     },
     {
-      "name": "Questo \u00e8 veramente forte. \u00c8 come 'vorresti che tua madre leggesse questo ??' Davvero un'ottima idea, ben fatta!",
-      "type": "VARCHAR"
-    },
-    {
       "name": "0.0",
       "type": "DOUBLE"
     },

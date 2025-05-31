@@ -26,10 +26,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "Musicians Fiction, Bullfighters Fiction, Best friends Fiction, Friendship Fiction, Adventure and adventurers Fiction",
-      "type": "VARCHAR"
-    },
-    {
       "name": "jcbk",
       "type": "VARCHAR"
     },
