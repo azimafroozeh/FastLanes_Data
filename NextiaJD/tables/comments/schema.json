@@ -10,10 +10,6 @@
       "type": "BIGINT"
     },
     {
-      "name": "BJ Cook",
-      "type": "VARCHAR"
-    },
-    {
       "name": "2010-04-01",
       "type": "DATE"
     },

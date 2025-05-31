@@ -14,10 +14,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "https://lh3.googleusercontent.com/-u36sfNNLUw4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucl_w9Gc56MwHIQsjbAUn4FZSW8QeQ/photo.jpg",
-      "type": "VARCHAR"
-    },
-    {
       "name": "4",
       "type": "BIGINT"
     },
@@ -32,10 +28,6 @@
     {
       "name": "2020-05-29 18:56:28",
       "type": "TIMESTAMP"
-    },
-    {
-      "name": "Hello Christine, Thank you for your feedback. We sincerely apologize for the troubles you've had with the app. We would be happy to take a look into this for you. Please contact us at Support@7cups.com. Thank you.",
-      "type": "VARCHAR"
     },
     {
       "name": "2020-05-30 05:36:53",

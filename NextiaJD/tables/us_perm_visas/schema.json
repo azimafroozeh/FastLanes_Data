@@ -322,10 +322,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "Computer Systems Design Services",
-      "type": "VARCHAR"
-    },
-    {
       "name": "null_65",
       "type": "VARCHAR"
     },
@@ -362,11 +358,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_74",
+      "name": "75629.0",
       "type": "VARCHAR"
     },
     {
-      "name": "75629.0",
+      "name": "null_74",
       "type": "VARCHAR"
     },
     {
@@ -378,14 +374,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_77",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "Computer Software Engineers, Applications",
-      "type": "VARCHAR"
-    },
-    {
       "name": "Level II",
       "type": "VARCHAR"
     },
@@ -394,11 +382,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "Computer Software Engineers, Applications_1",
+      "name": "OES",
       "type": "VARCHAR"
     },
     {
-      "name": "OES",
+      "name": "null_77",
       "type": "VARCHAR"
     },
     {
@@ -406,11 +394,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_79",
+      "name": "yr",
       "type": "VARCHAR"
     },
     {
-      "name": "yr",
+      "name": "null_79",
       "type": "VARCHAR"
     },
     {
@@ -586,10 +574,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_123",
-      "type": "VARCHAR"
-    },
-    {
       "name": "IT",
       "type": "VARCHAR"
     },
@@ -598,11 +582,15 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_124",
+      "name": "null_123",
       "type": "VARCHAR"
     },
     {
       "name": "yr_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_124",
       "type": "VARCHAR"
     },
     {
@@ -611,10 +599,6 @@
     },
     {
       "name": "null_126",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "null_127",
       "type": "VARCHAR"
     }
   ]

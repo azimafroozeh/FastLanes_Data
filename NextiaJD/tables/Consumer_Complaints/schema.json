@@ -22,10 +22,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_1",
-      "type": "VARCHAR"
-    },
-    {
       "name": "M&T BANK CORPORATION",
       "type": "VARCHAR"
     },
@@ -38,7 +34,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_2",
+      "name": "null_1",
       "type": "VARCHAR"
     },
     {

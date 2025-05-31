@@ -26,18 +26,6 @@
       "type": "BIGINT"
     },
     {
-      "name": "McGraw-Hill's dictionary of American slang and colloquial expressions / Richard A. Spears.",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "Spears, Richard A.",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "McGraw-Hill,",
-      "type": "VARCHAR"
-    },
-    {
       "name": "c2006.",
       "type": "VARCHAR"
     }

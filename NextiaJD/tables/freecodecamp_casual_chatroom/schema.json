@@ -66,14 +66,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "[]_1",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "[]_2",
-      "type": "VARCHAR"
-    },
-    {
       "name": "22",
       "type": "BIGINT"
     },

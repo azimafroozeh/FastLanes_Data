@@ -46,19 +46,11 @@
       "type": "BIGINT"
     },
     {
-      "name": "We are the #UnitedNations\u2019 health agency. We are committed to achieving better health for everyone, everywhere - #HealthForAll",
-      "type": "VARCHAR"
-    },
-    {
       "name": "2008-04-23 22:56:27",
       "type": "TIMESTAMP"
     },
     {
       "name": "null_2",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "Geneva, Switzerland",
       "type": "VARCHAR"
     },
     {

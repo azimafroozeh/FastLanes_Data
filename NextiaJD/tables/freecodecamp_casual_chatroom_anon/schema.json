@@ -42,10 +42,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "[]_1",
-      "type": "VARCHAR"
-    },
-    {
       "name": "22",
       "type": "BIGINT"
     },
@@ -64,10 +60,6 @@
     {
       "name": "1",
       "type": "BIGINT"
-    },
-    {
-      "name": "[]_2",
-      "type": "VARCHAR"
     }
   ]
 }

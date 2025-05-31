@@ -18,10 +18,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "United Kingdom_1",
-      "type": "VARCHAR"
-    },
-    {
       "name": "5381567",
       "type": "BIGINT"
     },

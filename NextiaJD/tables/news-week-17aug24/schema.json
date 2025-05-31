@@ -8,10 +8,6 @@
     {
       "name": "w3-adweek",
       "type": "VARCHAR"
-    },
-    {
-      "name": "Here Are the Details on Facebook's Global Partner Summit",
-      "type": "VARCHAR"
     }
   ]
 }

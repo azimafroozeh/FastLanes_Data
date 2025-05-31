@@ -4,10 +4,6 @@
     {
       "name": "20100101",
       "type": "BIGINT"
-    },
-    {
-      "name": "100 Most Anticipated books releasing in 2010",
-      "type": "VARCHAR"
     }
   ]
 }

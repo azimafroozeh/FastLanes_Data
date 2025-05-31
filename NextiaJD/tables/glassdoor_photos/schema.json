@@ -10,28 +10,12 @@
       "type": "BIGINT"
     },
     {
-      "name": "Mango day",
-      "type": "VARCHAR"
-    },
-    {
       "name": "10772510",
       "type": "BIGINT"
     },
     {
       "name": "10772511",
       "type": "BIGINT"
-    },
-    {
-      "name": "/Photos/Afiniti-Office-Photos-IMG1912051.htm",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "https://media.glassdoor.com/lst/1436090/afiniti-office.jpg",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "https://media.glassdoor.com/lst2x/1436090/afiniti-office.jpg",
-      "type": "VARCHAR"
     }
   ]
 }

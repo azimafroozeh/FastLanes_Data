@@ -8,10 +8,6 @@
     {
       "name": "9",
       "type": "BIGINT"
-    },
-    {
-      "name": "Ms. LOREN MOONEY (Editor-in-Chief, Bicycling Magazine)",
-      "type": "VARCHAR"
     }
   ]
 }
