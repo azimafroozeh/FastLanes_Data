@@ -30,10 +30,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "HARASSMENT BY TELEPHONE",
-      "type": "VARCHAR"
-    },
-    {
       "name": "RESIDENCE",
       "type": "VARCHAR"
     },

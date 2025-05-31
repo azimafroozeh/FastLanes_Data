@@ -6,10 +6,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "VOLUNTEERS OF AMERICA INC",
-      "type": "VARCHAR"
-    },
-    {
       "name": "null",
       "type": "VARCHAR"
     },

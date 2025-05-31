@@ -18,10 +18,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null",
-      "type": "VARCHAR"
-    },
-    {
       "name": "Issued",
       "type": "VARCHAR"
     },
@@ -42,11 +38,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_1",
+      "name": "null",
       "type": "VARCHAR"
     },
     {
-      "name": "null_2",
+      "name": "null_1",
       "type": "VARCHAR"
     },
     {
@@ -88,10 +84,6 @@
     {
       "name": "2019-07-21T22:49:12+02:00",
       "type": "TIMESTAMP"
-    },
-    {
-      "name": "null_3",
-      "type": "VARCHAR"
     }
   ]
 }

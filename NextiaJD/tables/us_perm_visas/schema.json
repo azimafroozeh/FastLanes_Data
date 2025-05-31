@@ -14,10 +14,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_3",
-      "type": "VARCHAR"
-    },
-    {
       "name": "PERM",
       "type": "VARCHAR"
     },
@@ -26,11 +22,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_4",
+      "name": "null_3",
       "type": "VARCHAR"
     },
     {
-      "name": "null_5",
+      "name": "null_4",
       "type": "VARCHAR"
     },
     {
@@ -42,7 +38,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_6",
+      "name": "null_5",
       "type": "VARCHAR"
     },
     {
@@ -54,15 +50,11 @@
       "type": "DATE"
     },
     {
-      "name": "24 WEST 25 STREET",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "5TH FLOOR",
-      "type": "VARCHAR"
-    },
-    {
       "name": "NEW YORK",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
       "type": "VARCHAR"
     },
     {
@@ -74,10 +66,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "NETSOFT USA INC.",
-      "type": "VARCHAR"
-    },
-    {
       "name": "null_9",
       "type": "VARCHAR"
     },
@@ -86,15 +74,15 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_11",
-      "type": "VARCHAR"
-    },
-    {
       "name": "10010.0",
       "type": "VARCHAR"
     },
     {
       "name": "NY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_11",
       "type": "VARCHAR"
     },
     {
@@ -302,15 +290,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_63",
-      "type": "VARCHAR"
-    },
-    {
       "name": "New York_1",
       "type": "VARCHAR"
     },
     {
-      "name": "null_64",
+      "name": "null_63",
       "type": "VARCHAR"
     },
     {
@@ -319,6 +303,10 @@
     },
     {
       "name": "541512",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_64",
       "type": "VARCHAR"
     },
     {
@@ -354,11 +342,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_73",
+      "name": "75629.0",
       "type": "VARCHAR"
     },
     {
-      "name": "75629.0",
+      "name": "null_73",
       "type": "VARCHAR"
     },
     {
@@ -367,10 +355,6 @@
     },
     {
       "name": "null_75",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "null_76",
       "type": "VARCHAR"
     },
     {
@@ -386,15 +370,19 @@
       "type": "VARCHAR"
     },
     {
+      "name": "null_76",
+      "type": "VARCHAR"
+    },
+    {
       "name": "null_77",
       "type": "VARCHAR"
     },
     {
-      "name": "null_78",
+      "name": "yr",
       "type": "VARCHAR"
     },
     {
-      "name": "yr",
+      "name": "null_78",
       "type": "VARCHAR"
     },
     {
@@ -570,10 +558,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_122",
-      "type": "VARCHAR"
-    },
-    {
       "name": "IT",
       "type": "VARCHAR"
     },
@@ -582,11 +566,15 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_123",
+      "name": "null_122",
       "type": "VARCHAR"
     },
     {
       "name": "yr_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_123",
       "type": "VARCHAR"
     },
     {
@@ -595,10 +583,6 @@
     },
     {
       "name": "null_125",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "null_126",
       "type": "VARCHAR"
     }
   ]

@@ -30,10 +30,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "1013 MAIN\nKEOKUK 52632\n(40.39978, -91.387531)",
-      "type": "VARCHAR"
-    },
-    {
       "name": "56",
       "type": "VARCHAR"
     },
@@ -60,10 +56,6 @@
     {
       "name": "297",
       "type": "BIGINT"
-    },
-    {
-      "name": "Templeton Rye w/Flask",
-      "type": "VARCHAR"
     },
     {
       "name": "6",

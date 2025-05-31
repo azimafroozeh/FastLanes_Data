@@ -6,14 +6,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "Coldplay",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "Coldplay_1",
-      "type": "VARCHAR"
-    },
-    {
       "name": "United Kingdom",
       "type": "VARCHAR"
     },

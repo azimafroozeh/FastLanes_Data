@@ -6,23 +6,7 @@
       "type": "DATE"
     },
     {
-      "name": "Mortgage",
-      "type": "VARCHAR"
-    },
-    {
       "name": "Other mortgage",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "Loan modification,collection,foreclosure",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "null",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "M&T BANK CORPORATION",
       "type": "VARCHAR"
     },
     {
@@ -34,7 +18,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_1",
+      "name": "null",
       "type": "VARCHAR"
     },
     {

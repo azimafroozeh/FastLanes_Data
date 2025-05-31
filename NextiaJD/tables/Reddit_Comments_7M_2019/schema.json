@@ -34,10 +34,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_6",
-      "type": "VARCHAR"
-    },
-    {
       "name": "text",
       "type": "VARCHAR"
     },
@@ -54,15 +50,15 @@
       "type": "BIGINT"
     },
     {
+      "name": "null_6",
+      "type": "VARCHAR"
+    },
+    {
       "name": "null_7",
       "type": "VARCHAR"
     },
     {
       "name": "null_8",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "null_9",
       "type": "VARCHAR"
     },
     {
@@ -82,7 +78,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_10",
+      "name": "null_9",
       "type": "VARCHAR"
     },
     {
@@ -90,7 +86,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_11",
+      "name": "null_10",
       "type": "VARCHAR"
     },
     {
@@ -99,10 +95,6 @@
     },
     {
       "name": "t3_ab8wps_1",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "/r/leagueoflegends/comments/ab8wps/whats_the_bestfunniest_insults_youve_ever_heard/eczayvu/",
       "type": "VARCHAR"
     },
     {
@@ -130,7 +122,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_12",
+      "name": "null_11",
       "type": "VARCHAR"
     },
     {

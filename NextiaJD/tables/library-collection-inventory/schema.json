@@ -6,10 +6,6 @@
       "type": "BIGINT"
     },
     {
-      "name": "2014.",
-      "type": "VARCHAR"
-    },
-    {
       "name": "jcbk",
       "type": "VARCHAR"
     },
