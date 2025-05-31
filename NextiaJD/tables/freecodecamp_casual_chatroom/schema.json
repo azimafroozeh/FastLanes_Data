@@ -10,11 +10,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_1",
+      "name": "null.1",
       "type": "VARCHAR"
     },
     {
-      "name": "null_2",
+      "name": "null.2",
       "type": "VARCHAR"
     },
     {
@@ -38,11 +38,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_3",
+      "name": "null.3",
       "type": "VARCHAR"
     },
     {
-      "name": "null_4",
+      "name": "null.4",
       "type": "VARCHAR"
     },
     {
@@ -58,10 +58,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "no legumes either",
-      "type": "VARCHAR"
-    },
-    {
       "name": "54a4804fb2b2de4b786502bf",
       "type": "VARCHAR"
     },
@@ -70,11 +66,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "[]_1",
+      "name": "[].1",
       "type": "VARCHAR"
     },
     {
-      "name": "[]_2",
+      "name": "[].2",
       "type": "VARCHAR"
     },
     {
@@ -86,11 +82,11 @@
       "type": "TIMESTAMP"
     },
     {
-      "name": "null_5",
+      "name": "null.5",
       "type": "VARCHAR"
     },
     {
-      "name": "no legumes either_1",
+      "name": "no legumes either.1",
       "type": "VARCHAR"
     },
     {
@@ -98,7 +94,7 @@
       "type": "BOOLEAN"
     },
     {
-      "name": "[]_3",
+      "name": "[].3",
       "type": "VARCHAR"
     },
     {

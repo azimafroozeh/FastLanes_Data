@@ -10,7 +10,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_1",
+      "name": "null.1",
       "type": "VARCHAR"
     },
     {
@@ -18,11 +18,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_2",
+      "name": "null.2",
       "type": "VARCHAR"
     },
     {
-      "name": "null_3",
+      "name": "null.3",
       "type": "VARCHAR"
     },
     {
@@ -30,15 +30,15 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_4",
+      "name": "null.4",
       "type": "VARCHAR"
     },
     {
-      "name": "null_5",
+      "name": "null.5",
       "type": "VARCHAR"
     },
     {
-      "name": "null_6",
+      "name": "null.6",
       "type": "VARCHAR"
     },
     {
@@ -54,23 +54,19 @@
       "type": "VARCHAR"
     },
     {
-      "name": "You have the map awareness of a raccoon in a garbage can",
-      "type": "VARCHAR"
-    },
-    {
       "name": "1546300804",
       "type": "BIGINT"
     },
     {
-      "name": "null_7",
+      "name": "null.7",
       "type": "VARCHAR"
     },
     {
-      "name": "null_8",
+      "name": "null.8",
       "type": "VARCHAR"
     },
     {
-      "name": "null_9",
+      "name": "null.9",
       "type": "VARCHAR"
     },
     {
@@ -78,11 +74,11 @@
       "type": "DOUBLE"
     },
     {
-      "name": "0.0_1",
+      "name": "0.0.1",
       "type": "DOUBLE"
     },
     {
-      "name": "0.0_2",
+      "name": "0.0.2",
       "type": "DOUBLE"
     },
     {
@@ -90,7 +86,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_10",
+      "name": "null.10",
       "type": "VARCHAR"
     },
     {
@@ -98,7 +94,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_11",
+      "name": "null.11",
       "type": "VARCHAR"
     },
     {
@@ -106,7 +102,7 @@
       "type": "BOOLEAN"
     },
     {
-      "name": "t3_ab8wps_1",
+      "name": "t3_ab8wps.1",
       "type": "VARCHAR"
     },
     {
@@ -122,11 +118,11 @@
       "type": "BIGINT"
     },
     {
-      "name": "True_1",
+      "name": "True.1",
       "type": "BOOLEAN"
     },
     {
-      "name": "False_1",
+      "name": "False.1",
       "type": "BOOLEAN"
     },
     {
@@ -138,7 +134,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null_12",
+      "name": "null.12",
       "type": "VARCHAR"
     },
     {

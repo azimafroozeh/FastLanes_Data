@@ -6,12 +6,8 @@
       "type": "BIGINT"
     },
     {
-      "name": "1_1",
+      "name": "1.1",
       "type": "BIGINT"
-    },
-    {
-      "name": "Seemed to work fine.",
-      "type": "VARCHAR"
     },
     {
       "name": "BJ Cook",
@@ -22,7 +18,7 @@
       "type": "DATE"
     },
     {
-      "name": "1_2",
+      "name": "1.2",
       "type": "BIGINT"
     }
   ]
