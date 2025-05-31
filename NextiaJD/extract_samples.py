@@ -41,9 +41,9 @@ def load_delimiters(metadata_path: Path):
 
 
 def extract_sample(in_path: Path, out_path: Path, delim: str):
-    if out_path.exists():
-        print(f"-- Skipping {in_path.name}: sample already exists")
-        return
+    # if out_path.exists():
+    #     print(f"-- Skipping {in_path.name}: sample already exists")
+    #     return
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
 

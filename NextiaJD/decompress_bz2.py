@@ -29,9 +29,9 @@ def main():
 
     for bz2_path in bz2_files:
         csv_path = bz2_path.with_suffix('')  # drop the .bz2
-        if csv_path.exists():
-            print(f"-- Skipping {bz2_path.name}: {csv_path.name} already exists")
-            continue
+        # if csv_path.exists():
+        #     print(f"-- Skipping {bz2_path.name}: {csv_path.name} already exists")
+        #     continue
 
         print(f"-- Decompressing {bz2_path.name} → {csv_path.name}")
         try:

@@ -43,9 +43,9 @@ def main():
             continue
 
         schema_file = table_dir / "schema.json"
-        # if schema_file.exists():
-        #     print(f"-- Skipping {table_dir.name}: schema.json already exists")
-        #     continue
+        if schema_file.exists():
+            print(f"-- Skipping {table_dir.name}: schema.json already exists")
+            continue
 
         # Find the csv
         csv_files = list(table_dir.glob("*.csv"))

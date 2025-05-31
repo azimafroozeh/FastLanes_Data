@@ -6,7 +6,7 @@
       "type": "BIGINT"
     },
     {
-      "name": "1.1",
+      "name": "1_1",
       "type": "BIGINT"
     },
     {
@@ -18,7 +18,7 @@
       "type": "DATE"
     },
     {
-      "name": "1.2",
+      "name": "1_2",
       "type": "BIGINT"
     }
   ]

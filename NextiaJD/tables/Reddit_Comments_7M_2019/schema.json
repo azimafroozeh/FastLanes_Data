@@ -10,7 +10,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null.1",
+      "name": "null_1",
       "type": "VARCHAR"
     },
     {
@@ -18,11 +18,11 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null.2",
+      "name": "null_2",
       "type": "VARCHAR"
     },
     {
-      "name": "null.3",
+      "name": "null_3",
       "type": "VARCHAR"
     },
     {
@@ -30,15 +30,15 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null.4",
+      "name": "null_4",
       "type": "VARCHAR"
     },
     {
-      "name": "null.5",
+      "name": "null_5",
       "type": "VARCHAR"
     },
     {
-      "name": "null.6",
+      "name": "null_6",
       "type": "VARCHAR"
     },
     {
@@ -58,15 +58,15 @@
       "type": "BIGINT"
     },
     {
-      "name": "null.7",
+      "name": "null_7",
       "type": "VARCHAR"
     },
     {
-      "name": "null.8",
+      "name": "null_8",
       "type": "VARCHAR"
     },
     {
-      "name": "null.9",
+      "name": "null_9",
       "type": "VARCHAR"
     },
     {
@@ -74,11 +74,11 @@
       "type": "DOUBLE"
     },
     {
-      "name": "0.0.1",
+      "name": "0.0_1",
       "type": "DOUBLE"
     },
     {
-      "name": "0.0.2",
+      "name": "0.0_2",
       "type": "DOUBLE"
     },
     {
@@ -86,7 +86,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null.10",
+      "name": "null_10",
       "type": "VARCHAR"
     },
     {
@@ -94,7 +94,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null.11",
+      "name": "null_11",
       "type": "VARCHAR"
     },
     {
@@ -102,7 +102,7 @@
       "type": "BOOLEAN"
     },
     {
-      "name": "t3_ab8wps.1",
+      "name": "t3_ab8wps_1",
       "type": "VARCHAR"
     },
     {
@@ -118,11 +118,11 @@
       "type": "BIGINT"
     },
     {
-      "name": "True.1",
+      "name": "True_1",
       "type": "BOOLEAN"
     },
     {
-      "name": "False.1",
+      "name": "False_1",
       "type": "BOOLEAN"
     },
     {
@@ -134,7 +134,7 @@
       "type": "VARCHAR"
     },
     {
-      "name": "null.12",
+      "name": "null_12",
       "type": "VARCHAR"
     },
     {

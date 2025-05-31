@@ -58,10 +58,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "no legumes either",
-      "type": "VARCHAR"
-    },
-    {
       "name": "False",
       "type": "BOOLEAN"
     },
