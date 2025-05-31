@@ -62,15 +62,11 @@
       "type": "BOOLEAN"
     },
     {
-      "name": "[]_2",
-      "type": "VARCHAR"
-    },
-    {
       "name": "1",
       "type": "BIGINT"
     },
     {
-      "name": "[]_3",
+      "name": "[]_2",
       "type": "VARCHAR"
     }
   ]

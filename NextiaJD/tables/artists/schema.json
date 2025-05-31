@@ -22,10 +22,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "rock; pop; alternative rock; british; uk; britannique; britpop; pop rock; piano pop; piano rock; english; parlophone; rock and indie; ambient pop; pop/rock; chapel; post-britpop",
-      "type": "VARCHAR"
-    },
-    {
       "name": "5381567",
       "type": "BIGINT"
     },

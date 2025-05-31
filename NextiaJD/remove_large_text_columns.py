@@ -28,7 +28,7 @@ from typing import List, Set, Tuple
 N_ROWS = 64 * 1024
 # maximum allowed length for any single cell; columns that violate this
 # will be entirely removed from the sample
-MAX_CELL_LEN = 1000
+MAX_CELL_LEN = 500
 
 
 def load_delimiters(metadata_path: Path) -> dict:

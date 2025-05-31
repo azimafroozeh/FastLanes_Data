@@ -26,10 +26,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "[]",
-      "type": "VARCHAR"
-    },
-    {
       "name": "null_4",
       "type": "VARCHAR"
     },

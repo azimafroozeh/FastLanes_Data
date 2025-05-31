@@ -34,10 +34,6 @@
       "type": "VARCHAR"
     },
     {
-      "name": "English language United States Slang Dictionaries, Figures of speech Dictionaries, Americanisms Dictionaries",
-      "type": "VARCHAR"
-    },
-    {
       "name": "McGraw-Hill,",
       "type": "VARCHAR"
     },

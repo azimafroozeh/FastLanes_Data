@@ -2,10 +2,6 @@
   "table": "covid-19_tw",
   "columns": [
     {
-      "name": "\ud83d\udea8 BREAKING \ud83d\udea8\n\nWe have therefore made the assessment that #COVID19 can be characterized as a pandemic-@DrTedros #coronavirus https://t.co/JqdsM2051A",
-      "type": "VARCHAR"
-    },
-    {
       "name": "1237777021742338050",
       "type": "BIGINT"
     },

@@ -6,10 +6,6 @@
       "type": "BIGINT"
     },
     {
-      "name": "A tale of two friends / adapted by Ellie O'Ryan ; illustrated by Tom Caulfield, Frederick Gardner, Megan Petasky, and Allen Tam.",
-      "type": "VARCHAR"
-    },
-    {
       "name": "O'Ryan, Ellie",
       "type": "VARCHAR"
     },

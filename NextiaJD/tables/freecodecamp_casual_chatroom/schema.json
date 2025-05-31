@@ -90,10 +90,6 @@
       "type": "BOOLEAN"
     },
     {
-      "name": "[]_3",
-      "type": "VARCHAR"
-    },
-    {
       "name": "1",
       "type": "BIGINT"
     }
