@@ -1,97 +1,132 @@
-# Makefile for FastLanes Data workflows
+###############################################################################
+# FastLanes Data – Makefile
+###############################################################################
 
-# Force all recipes to run under Bash (so "set -o pipefail" works)
-SHELL := /bin/bash
+SHELL  := /bin/bash
+PYTHON := python3
 
-PYTHON              := python3
-VENV_DIR            := venv
-ENV_SCRIPT          := export_fastlanes_data_dir.sh
+# virtual-env directory (absolute path so it works after “cd” commands)
+VENV   := $(abspath .venv)
 
-# Existing scripts
-SCRIPT              := public_bi_extract_schemas.py
-REFORMAT            := reformat_csvs.py
-CSV_SIZE_REPORT     := csv_size_report.py
+# Always source the venv, then run the remainder of the command.
+ACTIVATE = . "$(VENV)/bin/activate" &&
 
-# TPCH-related script and outputs
-TPCH_DIR            := tpch
-TPCH_SCRIPT         := generate_tpch.py
-TPCH_DB             := tpch/tpch_sf1.duckdb
-TPCH_FULL_OUT       := tpch/temp
-TPCH_SAMPLE_OUT     := tpch/tables
+# ──────────────────────────────────────────────────────────────────────────
+# Helper scripts
+# ──────────────────────────────────────────────────────────────────────────
+SCRIPT_PUBLIC_BI := public_bi_extract_schemas.py
+REFORMAT_CSVS    := reformat_csvs.py
+CSV_SIZE_REPORT  := csv_size_report.py
 
-.PHONY: all env install get_public_bi_schemas reformat_csvs check_metadata \
-        prepare_nextiajd csv_size_report prepare_tpch clean_tpch clean
+# ──────────────────────────────────────────────────────────────────────────
+# Dataset generators
+# ──────────────────────────────────────────────────────────────────────────
+TPCH_DIR   := tpch
+TPCH_DB    := $(TPCH_DIR)/tpch_sf1.duckdb
+TPCH_TEMP  := $(TPCH_DIR)/temp
+TPCH_SCRIPT := generate_tpch.py
 
-# Default: load env, create venv, and run schema extraction
+SSB_DIR    := ssb
+SSB_DB     := $(SSB_DIR)/ssb_sf1.duckdb
+SSB_TEMP   := $(SSB_DIR)/temp
+SSB_SCRIPT := generate_ssb.py
+
+TPCDS_DIR  := tpcds
+TPCDS_DB   := $(TPCDS_DIR)/tpcds_sf1.duckdb
+TPCDS_TEMP := $(TPCDS_DIR)/temp
+TPCDS_SCRIPT := generate_tpcds.py
+
+# ──────────────────────────────────────────────────────────────────────────
+# Phony targets
+# ──────────────────────────────────────────────────────────────────────────
+.PHONY: all install \
+        get_public_bi_schemas reformat_csvs check_metadata prepare_nextiajd \
+        csv_size_report \
+        prepare_tpch clean_tpch \
+        prepare_ssb clean_ssb \
+        prepare_tpcds clean_tpcds \
+        clean
+
+# ===========================================================================
+# 1. default
+# ===========================================================================
 all: install get_public_bi_schemas
 
-# Set up (if needed) and install into virtual environment
+# ===========================================================================
+# 2. virtual-env & deps
+# ===========================================================================
 install:
-	@if [ ! -d $(VENV_DIR) ]; then \
-		echo "Creating virtual environment..."; \
-		$(PYTHON) -m venv $(VENV_DIR); \
+	@if [ ! -d "$(VENV)" ]; then \
+	    echo "Creating virtual environment …"; \
+	    $(PYTHON) -m venv $(VENV); \
 	fi
-	@echo "Upgrading pip..."
-	. $(VENV_DIR)/bin/activate && pip install --upgrade pip
-	@echo "Installing required Python packages..."
-	. $(VENV_DIR)/bin/activate && pip install pyyaml pandas beautifulsoup4 requests duckdb
+	@echo "Upgrading pip …"
+	$(ACTIVATE) pip install --upgrade pip
+	@echo "Installing core packages …"
+	$(ACTIVATE) pip install duckdb pyyaml pandas beautifulsoup4 requests
 	@if [ -f requirements.txt ]; then \
-		echo "Installing dependencies from requirements.txt..."; \
-		. $(VENV_DIR)/bin/activate && pip install -r requirements.txt; \
+	    $(ACTIVATE) pip install -r requirements.txt; \
 	fi
 
-# Run the BI schema extraction script
+# ===========================================================================
+# 3. Public-BI
+# ===========================================================================
 get_public_bi_schemas: install
-	@echo "Extracting public BI schemas..."
-	cd scripts && . ../$(VENV_DIR)/bin/activate && $(PYTHON) $(SCRIPT)
+	cd scripts && $(ACTIVATE) $(PYTHON) $(SCRIPT_PUBLIC_BI)
 
-# Re-format all CSV files under NextiaJD
+# ===========================================================================
+# 4. NextiaJD helpers
+# ===========================================================================
 reformat_csvs: install
-	@echo "Re-formatting all CSV files under NextiaJD..."
-	. $(VENV_DIR)/bin/activate && \
-		$(PYTHON) scripts/$(REFORMAT) $(FASTLANES_DATA_DIR)/NextiaJD
+	$(ACTIVATE) $(PYTHON) scripts/$(REFORMAT_CSVS) $(FASTLANES_DATA_DIR)/NextiaJD
 
-# --------------------------------------------------------------------
-# Verify presence of all files listed in metadata.csv
 check_metadata:
-	@echo "Verifying NextiaJD downloads against metadata..."
-	. $(VENV_DIR)/bin/activate && \
-		$(PYTHON) NextiaJD/check_metadata.py
+	$(ACTIVATE) $(PYTHON) NextiaJD/check_metadata.py
 
-# --------------------------------------------------------------------
-# Run the full NextiaJD data preparation pipeline
 prepare_nextiajd: install
-	@echo "Running full NextiaJD pipeline via prepare.py..."
-	# Change directory into NextiaJD/ so that each script is found
-	cd NextiaJD && . ../venv/bin/activate && $(PYTHON) prepare.py
+	cd NextiaJD && $(ACTIVATE) $(PYTHON) prepare.py
 
-# --------------------------------------------------------------------
-# Run the CSV‐size report script and save to csv_sizes_report.csv
 csv_size_report: install
-	@echo "Generating CSV size report..."
-	. $(VENV_DIR)/bin/activate && \
-		$(PYTHON) scripts/$(CSV_SIZE_REPORT) > csv_sizes_report.csv
+	$(ACTIVATE) $(PYTHON) scripts/$(CSV_SIZE_REPORT) > csv_sizes_report.csv
 	@echo "→ csv_sizes_report.csv created."
 
-# --------------------------------------------------------------------
-# TPCH targets
-
-# Generate full TPC-H SF=1 tables and exports inside tpch/
+# ===========================================================================
+# 5. TPCH
+# ===========================================================================
 prepare_tpch: install
-	@echo "Generating TPC-H SF=1 tables and exporting CSVs/schema under tpch/ ..."
-	@cd $(TPCH_DIR) && . ../$(VENV_DIR)/bin/activate && $(PYTHON) $(TPCH_SCRIPT)
+	cd $(TPCH_DIR) && $(ACTIVATE) $(PYTHON) $(TPCH_SCRIPT)
 
-# Remove TPCH database and full exports only (preserve sampled tables)
 clean_tpch:
-	@echo "Cleaning up TPCH artifacts (excluding sampled tables)..."
-	@rm -f $(TPCH_DB)
-	@rm -rf $(TPCH_FULL_OUT)
-	@echo "Removed $(TPCH_DB) and $(TPCH_FULL_OUT)."
+	@rm -f  $(TPCH_DB)
+	@rm -rf $(TPCH_TEMP)
+	@echo "TPCH cleaned."
 
-# --------------------------------------------------------------------
-# Clean up generated files and virtual environment
-clean: clean_tpch
-	@echo "Cleaning up global artifacts..."
-	@rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables csv_sizes_report.csv
+# ===========================================================================
+# 6. SSB
+# ===========================================================================
+prepare_ssb: install
+	cd $(SSB_DIR) && $(ACTIVATE) $(PYTHON) $(SSB_SCRIPT)
+
+clean_ssb:
+	@rm -f  $(SSB_DB)
+	@rm -rf $(SSB_TEMP)
+	@echo "SSB cleaned."
+
+# ===========================================================================
+# 7. TPC-DS
+# ===========================================================================
+prepare_tpcds: install
+	cd $(TPCDS_DIR) && $(ACTIVATE) $(PYTHON) $(TPCDS_SCRIPT)
+
+clean_tpcds:
+	@rm -f  $(TPCDS_DB)
+	@rm -rf $(TPCDS_TEMP)
+	@echo "TPC-DS cleaned."
+
+# ===========================================================================
+# 8. global clean
+# ===========================================================================
+clean: clean_tpch clean_ssb clean_tpcds
+	@rm -rf $(VENV) public_bi_benchmark ../public_bi/tables csv_sizes_report.csv
 	@rm -rf NextiaJD/temp
-	@echo "Cleanup complete."
+	@echo "Global cleanup complete."
